@@ -5,13 +5,12 @@ name: .NET
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "test" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "test" ]
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
